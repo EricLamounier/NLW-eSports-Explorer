@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: sans-serif;
+    line-height: 160%;
+}
+
+body {
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    background-color: #111114;
+}
+
+/*Editanto a Scroll Bar Do Body*/
+body::-webkit-scrollbar,
+.minhas-linguages ul::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.16);
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:#4d4d4d;
+}
+
+.box1,
+.cabecalho {
+    max-width: 600px;
+    margin: auto;
+    color: white;
+}
+
+.box1 h2 {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+}
+
+.box1 p,
+.cabecalho p {
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+    margin-bottom: 30px;
+    line-height: 16px;
+    padding-left: 20px;
+}
+
+.cabecalho p a {
+    color: #A1A1AA;
+    text-decoration: underline;
+}
+
+.cabecalho p a:hover {
+    color: #818187;
+}
+
+.cabecalho h2 {
+    position: relative;
+    bottom: 70px;
+    left: 110px;
+    margin-bottom: -30px;
+    color: #d8d8de;
+    text-shadow: 1px 1px purple;
+}
+
+.perfil p {
+    margin: 10px
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+article {
+    background-color: #2A2634;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 10px black;
+    overflow: hidden;
+}
+
+.top-shadow {
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Perfil*/
+.image-perfil {
+    background: url("../images/eric.jpeg");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.shadow-image-perfil {
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    background-size: 100%;
+    padding: 2px;
+    width: 103px;
+    height: 104px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+/*Jogos*/
+.meus-jogos ul,
+.meus-streamers ul{
+    display: flex;
+    justify-content: center;
+}
+
+.images-jogos {
+    width: 130px;
+    height: 200px;
+    border-radius: 8px;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+/*Image 1  -Sally Face*/
+.meus-jogos ul:nth-child(1) li:nth-child(1) .images-jogos:nth-child(1) {
+    background: url("https://pm1.narvii.com/6780/6a719a2f149c79c078ffcb074210f912edb165a2v2_hq.jpg");
+    background-size: cover;
+}
+
+/*Image 2 - The Sims*/
+.meus-jogos ul:nth-child(1) li:nth-child(2) .images-jogos:nth-child(1) {
+    background: url("https://upload.wikimedia.org/wikipedia/pt/3/34/Nova_capa_de_The_Sims_4.png");
+    background-size: cover;
+}
+
+/*Image 3 - Perfect World*/
+.meus-jogos ul:nth-child(1) li:nth-child(3) .images-jogos:nth-child(1) {
+    background: url("https://nosnerds.com.br/wp-content/uploads/2022/04/perfectworlddespertarselvagem-capa.jpg");
+    background-size: cover;
+}
+
+/*Image 3 - Guitar Hero*/
+.meus-jogos ul:nth-child(1) li:nth-child(4) .images-jogos:nth-child(1) {
+    background: url("https://fsb.zobj.net/crop.php?r=AcwHTWxA8O2IL37WXX2wUT73ZyqO16y6hr-nkJ0BmWAQLxvZovDjv1qjIIVoN3ai5oQzmsd3lRNy_U3plkFOR6W5WpmbTaWa-YTAxZkhqKCbCbBuFwBTKii5i627TUXPDjBWYg-fa05oCGMTvK5FoPt7SyGeyJony_EVviXmmbGihFPtD38DurqtEj4");
+    background-size: cover;
+}
+
+.meus-jogos span {
+    color:white;
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.4s ease;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 0 0 20px 20px;
+}
+
+/*Streamers*/
+.images-streamers {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+    border: 0.1px solid #3b3747;
+}
+
+/*Streamer 1*/
+.meus-streamers ul:nth-child(1) li:nth-child(1) .images-streamers:nth-child(1) {
+    background: url("../images/streamer1.jpg");
+    background-size: covaer;
+}
+
+/*Streamer 2*/
+.meus-streamers ul:nth-child(1) li:nth-child(2) .images-streamers:nth-child(1) {
+    background: url("../images/streamer2.jpg");
+    background-size: cover;
+}
+
+/*Streamer 2*/
+.meus-streamers ul:nth-child(1) li:nth-child(3) .images-streamers:nth-child(1) {
+    background: url("../images/streamer3.jpg");
+    background-size: cover;
+}
+
+.meus-streamers ul:nth-child(1) li:nth-child(4) .images-streamers:nth-child(1) {
+    background: url("../images/streamer4.jpg");
+    background-size: cover;
+}
+
+.meus-streamers span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 170px;
+    color: white;
+    opacity: 0;
+    transition: 0.4s ease;
+    background-color: rgba(0,0,0,.5);
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+/*Minhas Linguages*/
+.minhas-linguages svg {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: white;
+    fill: white;
+    transition: 0.3s ease;
+}
+
+.minhas-linguages ul {
+    display: flex;
+    justify-content: center;
+}
+
+/*Meu contato*/
+.meu-contato .social-list{
+    text-align: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+.meu-contato svg {
+    position: relative;
+    transform: scale(1.2);
+    color: white;
+    fill: white;
+    transition: 0.2s ease;
+    width: 20px;
+    height: 17px;
+}
+
+footer {
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    animation: fromBottom 1s ease;
+}
+
+/*Animações complementares*/
+.meus-jogos .images-jogos:hover,
+.meus-streamers .images-streamers:hover {
+    box-shadow: 0px 0px 10px white;
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+
+.meus-jogos .images-jogos:hover span {
+    top: -1px;
+    opacity: 1;
+    text-shadow: 1px 1px black;
+}
+
+.meus-streamers .images-streamers:hover span {
+    top: 100px;
+    opacity: 1;
+    text-shadow: 1px 1px black;
+}
+
+.meu-contato svg:hover,
+.minhas-linguages svg:hover {
+    -webkit-filter: drop-shadow( 0px 2px 5px white);
+    filter: drop-shadow( 0px 2px 5px white);
+}
+
+/***/
+@keyframes fromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.shadow-image-perfil,
+.perfil h2 {
+    animation: fromTop 0.6s  0.1s backwards;
+}
+
+.perfil h2 {
+    animation-delay: 0.05s;
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main section {
+    animation: fromBottom 1s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0s;
+}
+
+main section:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+main section:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+/*Para Celular*/
+
+@media screen and (max-width: 617px){
+
+    .box1,
+    .cabecalho {
+        width: 95vw;
+    }
+
+    .box1 article h2 {
+       font-size: 20px;
+    }
+
+    .box1 article p {
+        font-size: 15px;
+    }
+
+    .box1 p{
+        padding-left: 10px;
+    }
+
+    .perfil .shadow-image-perfil {
+        margin: auto;
+
+    }
+
+    .perfil h2 {
+        bottom: 0px;
+        padding: 0px;
+        left: -28px;
+        text-align: center;
+        width: 95vw;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+
+    .perfil p {
+        padding-left: 0;
+        position: relative;
+        right: 30px;
+        width: 90vw;
+        text-align: justify;
+    }
+
+    .meus-jogos ul,
+    .meus-streamers ul,
+    .minhas-linguages ul{
+        justify-content: left;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+        left: -20px;
+        width: 90vw;
+        padding: 20px;
+    }
+
+
+    /*Editanto a Scroll Bar*/
+    .meus-jogos ul::-webkit-scrollbar,
+    .meus-streamers ul::-webkit-scrollbar,
+    .minhas-linguages ul::-webkit-scrollbar {
+        height: 2px;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    .meus-jogos ul::-webkit-scrollbar-thumb,
+    .meus-streamers ul::-webkit-scrollbar-thumb,
+    .minhas-linguages ul::-webkit-scrollbar-thumb {
+        background-color: rgba(255,255,255,0.2);
+        display: flex;
+    }
+
+    .meus-streamers .images-streamers {
+        margin-bottom: 10px;
+    }
+
+   
+}
